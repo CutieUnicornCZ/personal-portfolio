@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lukáš Dlábek Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-gray-900">
+    <main class="text-almostWhite">
+      <!-- MOBILE MENU -->
+      <nav
+        id="navMenu"
+        class="hidden relative w-full flex-col justify-around items-center text-3xl font-thin uppercase bg-almostWhite text-darkColor h-screen"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="absolute top-10 right-10 size-10 hover:animate-spin cursor-pointer hover:stroke-sunYellow"
+          id="btnMenuClose"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+
+        <!-- LOGO -->
+        <p class="flex items-center">
+          Lukáš
+          <span
+            class="border-l border-darkColor h-10 mx-6 md:h-16 lg:h-48"
+          ></span>
+          Dlábek
+        </p>
+
+        <!-- LINKS -->
+        <ul class="flex flex-col gap-20 items-center w-full">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/lukas-dlabek"
+              target="_blank"
+              class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/CutieUnicornCZ"
+              target="_blank"
+              class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              target="_blank"
+              class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- DESKTOP MENU -->
+      <header class="flex justify-between p-6">
+        <!-- LOGO -->
+        <div class="logo">
+          <p class="flex items-center">
+            Lukáš
+            <span class="border border-almostWhite h-8 mx-1"></span>
+            Dlábek
+          </p>
+        </div>
+        <!-- LINKS -->
+        <div class="menu hidden md:block">
+          <ul class="flex gap-10 items-center w-full">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lukas-dlabek"
+                target="_blank"
+                class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/CutieUnicornCZ"
+                target="_blank"
+                class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+                >Github
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-8 hover:animate-pulse cursor-pointer hover:stroke-sunYellow md:hidden"
+          id="btnMenuOpen"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </header>
+
+      <!-- SECTION MAIN -->
+      <section
+        id="main-content"
+        class="flex flex-col mx-10 mt-20 px-6 md:mx-36 max-w-2xl"
+      >
+        <div>
+          <img
+            class="w-3/6 md:w-3/6 rounded-full grayscale hover:grayscale-0 duration-1000 hover:border-sunYellow border-2 hover:shadow-lg hover:shadow-gray-700"
+            src="./src/images/profile_pic.jpg"
+            alt=""
+          />
+        </div>
+        <div class="pt-6">
+          <h1 class="text-3xl font-bold py-2">Lukáš Dlábek</h1>
+          <p class="md:text-xl">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+            architecto expedita, repellat placeat culpa modi fuga voluptate illo
+            laboriosam blanditiis dolorem sapiente ad eius facilis iusto, vero
+            numquam nobis. Quidem.
+          </p>
+        </div>
+        <div class="flex flex-col gap-6 my-16 md:flex-row md:gap-10 text-xl">
+          <button
+            class="border-2 border-almostWhite bg-almostWhite text-darkColor px-6 py-2 rounded-full hover:shadow-lg hover:shadow-gray-700 duration-200 hover:bg-transparent hover:text-almostWhite"
+          >
+            Stáhnout CV
+          </button>
+          <button
+            class="border-2 border-almostWhite px-6 p-2 rounded-full hover:shadow-lg hover:bg-almostWhite hover:text-darkColor hover:shadow-gray-700 duration-200"
+          >
+            Kontakt
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
