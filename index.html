@@ -12,12 +12,12 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-gray-900">
-    <main class="text-almostWhite">
+  <body class="h-screen bg-gray-900">
+    <main class="h-screen text-almostWhite">
       <!-- MOBILE MENU -->
       <nav
         id="navMenu"
-        class="hidden relative w-full flex-col justify-around items-center text-3xl font-thin uppercase bg-almostWhite text-darkColor h-screen"
+        class="relative flex-col items-center justify-around hidden w-full h-screen text-3xl font-thin uppercase bg-almostWhite text-darkColor"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="absolute top-10 right-10 size-10 hover:animate-spin cursor-pointer hover:stroke-sunYellow"
+          class="absolute cursor-pointer top-10 right-10 size-10 hover:animate-spin hover:stroke-sunYellow"
           id="btnMenuClose"
         >
           <path
@@ -39,18 +39,18 @@
         <p class="flex items-center">
           Lukáš
           <span
-            class="border-l border-darkColor h-10 mx-6 md:h-16 lg:h-48"
+            class="h-10 mx-6 border-l border-darkColor md:h-16 lg:h-48"
           ></span>
           Dlábek
         </p>
 
         <!-- LINKS -->
-        <ul class="flex flex-col gap-20 items-center w-full">
+        <ul class="flex flex-col items-center w-full gap-20">
           <li>
             <a
               href="https://www.linkedin.com/in/lukas-dlabek"
               target="_blank"
-              class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+              class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse"
               >Linkedin</a
             >
           </li>
@@ -58,7 +58,7 @@
             <a
               href="https://github.com/CutieUnicornCZ"
               target="_blank"
-              class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+              class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse"
               >Github</a
             >
           </li>
@@ -66,7 +66,7 @@
             <a
               href="#"
               target="_blank"
-              class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+              class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse"
               >Kontakt</a
             >
           </li>
@@ -77,20 +77,20 @@
       <header class="flex justify-between p-6">
         <!-- LOGO -->
         <div class="logo">
-          <p class="flex items-center">
+          <p class="flex items-center animate-fadeindown">
             Lukáš
-            <span class="border border-almostWhite h-8 mx-1"></span>
+            <span class="h-8 mx-1 border border-almostWhite"></span>
             Dlábek
           </p>
         </div>
         <!-- LINKS -->
-        <div class="menu hidden md:block">
-          <ul class="flex gap-10 items-center w-full">
+        <div class="hidden menu md:block">
+          <ul class="flex items-center w-full gap-10 animate-fadeindown">
             <li>
               <a
                 href="https://www.linkedin.com/in/lukas-dlabek"
                 target="_blank"
-                class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+                class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse"
                 >Linkedin</a
               >
             </li>
@@ -98,7 +98,7 @@
               <a
                 href="https://github.com/CutieUnicornCZ"
                 target="_blank"
-                class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+                class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse"
                 >Github
               </a>
             </li>
@@ -106,7 +106,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="hover:tracking-widest hover:text-sunYellow hover:animate-pulse duration-200 ease-linear"
+                class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse"
                 >Kontakt</a
               >
             </li>
@@ -118,7 +118,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="size-8 hover:animate-pulse cursor-pointer hover:stroke-sunYellow md:hidden"
+          class="cursor-pointer size-8 hover:animate-pulse hover:stroke-sunYellow md:hidden"
           id="btnMenuOpen"
         >
           <path
@@ -132,17 +132,17 @@
       <!-- SECTION MAIN -->
       <section
         id="main-content"
-        class="flex flex-col mx-10 mt-20 px-6 md:mx-36 max-w-2xl"
+        class="flex flex-col justify-center w-full max-w-2xl px-10 mx-auto h-4/5 md:ml-28 animate-flyinright"
       >
         <div>
           <img
-            class="w-3/6 md:w-3/6 rounded-full grayscale hover:grayscale-0 duration-1000 hover:border-sunYellow border-2 hover:shadow-lg hover:shadow-gray-700"
+            class="w-1/6 duration-1000 border-2 rounded-full md:w-1/6 grayscale hover:grayscale-0 hover:border-sunYellow hover:shadow-lg hover:shadow-gray-700"
             src="./src/images/profile_pic.jpg"
             alt=""
           />
         </div>
-        <div class="pt-6">
-          <h1 class="text-3xl font-bold py-2">Lukáš Dlábek</h1>
+        <div class="pt-4">
+          <h1 class="py-1 text-3xl font-bold">Lukáš Dlábek</h1>
           <p class="md:text-xl">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
             architecto expedita, repellat placeat culpa modi fuga voluptate illo
@@ -150,14 +150,16 @@
             numquam nobis. Quidem.
           </p>
         </div>
-        <div class="flex flex-col gap-6 my-16 md:flex-row md:gap-10 text-xl">
+        <div
+          class="flex flex-col justify-center gap-6 my-10 text-xl md:flex-row md:gap-10"
+        >
           <button
-            class="border-2 border-almostWhite bg-almostWhite text-darkColor px-6 py-2 rounded-full hover:shadow-lg hover:shadow-gray-700 duration-200 hover:bg-transparent hover:text-almostWhite"
+            class="px-6 py-2 duration-200 border-2 rounded-full border-almostWhite bg-almostWhite text-darkColor hover:shadow-lg hover:shadow-gray-700 hover:bg-transparent hover:text-almostWhite hover:animate-jiggle"
           >
             Stáhnout CV
           </button>
           <button
-            class="border-2 border-almostWhite px-6 p-2 rounded-full hover:shadow-lg hover:bg-almostWhite hover:text-darkColor hover:shadow-gray-700 duration-200"
+            class="p-2 px-6 duration-200 border-2 rounded-full border-almostWhite hover:shadow-lg hover:bg-almostWhite hover:text-darkColor hover:shadow-gray-700 hover:animate-jiggle"
           >
             Kontakt
           </button>
