@@ -66,11 +66,29 @@ module.exports = {
             transform: "scale3d(1, 1, 1)",
           },
         },
+        tada: {
+          "0%": {
+            transform: "scale3d(1, 1, 1)",
+          },
+          "10%, 20%": {
+            transform: "scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)",
+          },
+          "30%, 50%, 70%, 90%": {
+            transform: "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
+          },
+          "40%, 60%, 80%": {
+            transform: "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
+          },
+          "100%": {
+            transform: "scale3d(1, 1, 1)",
+          },
+        },
       },
       animation: {
         flyinright: "fly-in-right 0.6s ease-in-out 0.25s 1",
         fadeindown: "fade-in-down 1s ease-in 0.25s 1",
         jiggle: "jiggle 0.6s ease-in-out 0.25s 1",
+        tada: "tada 1s ease-in-out 0.25s 1",
       },
     },
   },
