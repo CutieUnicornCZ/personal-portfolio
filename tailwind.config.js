@@ -85,7 +85,7 @@ module.exports = {
         },
       },
       animation: {
-        flyinright: "fly-in-right 0.6s ease-in-out 0.25s 1",
+        flyinright: "fly-in-right 1s ease-in-out 0.25s 1",
         fadeindown: "fade-in-down 1s ease-in 0.25s 1",
         jiggle: "jiggle 0.6s ease-in-out 0.25s 1",
         tada: "tada 1s ease-in-out 0.25s 1",
