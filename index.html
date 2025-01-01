@@ -12,12 +12,12 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-darkColor">
+  <body class="bg-gradient-to-br from-slate-800 to-violet-900">
     <main class="text-almostWhite">
       <!-- MOBILE MENU -->
       <nav
         id="navMenu"
-        class="relative flex-col items-center justify-around hidden w-full h-screen text-3xl font-thin uppercase bg-almostWhite text-darkColor"
+        class="relative flex-col items-center justify-around hidden w-full h-screen text-3xl font-thin uppercase bg-gradient-to-br from-slate-200 to-stone-300 text-violet-900"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
-          class="absolute cursor-pointer top-10 right-10 size-10 hover:animate-spin hover:stroke-sunYellow"
+          class="absolute cursor-pointer top-10 right-10 size-10 hover:animate-spin hover:stroke-violet-900"
           id="btnMenuClose"
         >
           <path
@@ -39,7 +39,7 @@
         <p class="flex items-center">
           Lukáš
           <span
-            class="h-10 mx-6 border-l border-darkColor md:h-16 lg:h-48"
+            class="h-10 mx-6 border-l border-violet-900 md:h-16 lg:h-48"
           ></span>
           Dlábek
         </p>
@@ -180,15 +180,18 @@
       </section>
 
       <!-- SKILLS Section -->
-      <section id="skills">
-        <div
-          class="py-1 text-3xl font-bold text-center md:text-4xL"
-          id="skills-text"
-        >
-          Dovednosti
+      <section id="skills" class="h-screen">
+        <div id="skills-text" class="pt-10">
+          <h2 class="text-3xl font-bold text-center md:text-4xL">Dovednosti</h2>
+          <p class="p-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            perspiciatis sint cupiditate, reiciendis ad ab fugiat totam a quasi
+            blanditiis.
+          </p>
         </div>
 
         <div
+          id="skills-wrapper"
           class="flex flex-col items-center justify-center gap-10 px-10 md:flex-row"
         >
           <div
@@ -255,6 +258,7 @@
           </div>
         </div>
       </section>
+      <section id="contacts"></section>
     </main>
     <script src="script.js"></script>
   </body>
