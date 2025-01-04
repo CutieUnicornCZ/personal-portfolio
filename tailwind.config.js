@@ -3,92 +3,61 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
-      colors: {
-        darkColor: "#45474B",
-        darkGreen: "#495E57",
-        sunYellow: "#F4CE14",
-        almostWhite: "#F5F7F8",
-      },
       fontFamily: {
-        sans: ["Outfit", "sans-serif"],
+        sans: ["Ubuntu", "sans-serif"],
       },
-      keyframes: {
-        "fly-in-right": {
-          "0%": {
-            opacity: "0",
-            transform: "translate3d(-1500px, 0, 0)",
-            transitionTimingFunction: "cubic-bezier(0.215, 0.61, 0.355, 1)",
-          },
-          "60%": {
-            opacity: "1",
-            transform: "translate3d(25px, 0, 0)",
-          },
-          "75%": {
-            transform: "translate3d(-10px, 0, 0)",
-          },
-          "90%": {
-            transform: "translate3d(5px, 0, 0)",
-          },
-          "100%": {
-            transform: "none",
-          },
-        },
-        "fade-in-down": {
-          "0%": {
-            opacity: 0,
-            transform: "translate3d(0, -100%, 0)",
-          },
-          "100%": {
-            opacity: 1,
-            transform: "translate3d(0, 0, 0)",
-          },
-        },
-        jiggle: {
-          "0%": {
-            transform: "scale3d(1, 1, 1)",
-          },
-          "30%": {
-            transform: "scale3d(1.25, 0.75, 1)",
-          },
-          "40%": {
-            transform: "scale3d(0.75, 1.25, 1)",
-          },
-          "50%": {
-            transform: "scale3d(1.15, 0.85, 1)",
-          },
-          "65%": {
-            transform: "scale3d(0.95, 1.05, 1)",
-          },
-          "75%": {
-            transform: "scale3d(1.05, 0.95, 1)",
-          },
-          "100%": {
-            transform: "scale3d(1, 1, 1)",
-          },
-        },
-        tada: {
-          "0%": {
-            transform: "scale3d(1, 1, 1)",
-          },
-          "10%, 20%": {
-            transform: "scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg)",
-          },
-          "30%, 50%, 70%, 90%": {
-            transform: "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)",
-          },
-          "40%, 60%, 80%": {
-            transform: "scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)",
-          },
-          "100%": {
-            transform: "scale3d(1, 1, 1)",
-          },
-        },
+
+      colors: {
+        primary: "#9aa6b2",
+        "primary-content": "#21262c",
+        "primary-dark": "#7d8c9c",
+        "primary-light": "#b7bfc8",
+
+        secondary: "#9ab29a",
+        "secondary-content": "#212c21",
+        "secondary-dark": "#7d9c7d",
+        "secondary-light": "#b7c8b7",
+
+        background: "#111a22",
+        foreground: "#192633",
+        border: "#2a4055",
+
+        copy: "#fafbfc",
+        "copy-light": "#ccd9e6",
+        "copy-lighter": "#88a6c4",
+
+        success: "#9ab29a",
+        warning: "#b2b29a",
+        error: "#b29a9a",
+
+        "success-content": "#212c21",
+        "warning-content": "#2c2c21",
+        "error-content": "#2c2121",
+
+        facebook: "#1877f2",
+        bluesky: "#1185fe",
+        github: "#2dba4e",
+        linkedin: "#0a66c2",
       },
-      animation: {
-        flyinright: "fly-in-right 1s ease-in-out 0.25s 1",
-        fadeindown: "fade-in-down 1s ease-in 0.25s 1",
-        jiggle: "jiggle 0.6s ease-in-out 0.25s 1",
-        tada: "tada 1s ease-in-out 0.25s 1",
+
+      boxShadow: {
+        shFacebook: "0 0 20px #1877f2",
+        shBluesky: "0 0 20px #1185fe",
+        shGithub: "0 0 20px #2dba4e",
+        shLinkedin: "0 0 20px #0a66c2",
+      },
+      height: {
+        cust1: "25rem",
+        cust2: "22.5rem",
+      },
+
+      width: {
+        cust1: "23.75rem",
+        cust2: "22.5rem",
+      },
+
+      backgroundImage: {
+        "radial-gradient": "radial-gradient(#7d8c9c, #b7bfc8)",
       },
     },
   },

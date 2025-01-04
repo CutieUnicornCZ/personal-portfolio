@@ -4,261 +4,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lukáš Dlábek Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Awesome Font icons link -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-gradient-to-br from-slate-800 to-violet-900">
-    <main class="text-almostWhite">
-      <!-- MOBILE MENU -->
-      <nav
-        id="navMenu"
-        class="relative flex-col items-center justify-around hidden w-full h-screen text-3xl font-thin uppercase bg-gradient-to-br from-slate-200 to-stone-300 text-violet-900"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="absolute cursor-pointer top-10 right-10 size-10 hover:animate-spin hover:stroke-violet-900"
-          id="btnMenuClose"
+
+  <body class="font-sans bg-primary-content text-copy">
+    <!-- HEADER SECTION -->
+    <header class="flex h-20 px-2.5 mx-auto max-w-7xl">
+      <nav class="flex items-center justify-between w-full">
+        <h1 class="text-2xl font-bold">Lukáš Dlábek.</h1>
+        <div class="flex gap-10">
+          <a
+            href="#"
+            class="relative scroll-smooth after:w-2.5 after:h-1 after:bg-secondary after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:rounded-md"
+            >Home</a
+          >
+          <a href="#" class="relative scroll-smooth">O mně</a>
+          <a href="#" class="relative scroll-smooth">Zkušenosti</a>
+          <a href="#" class="relative scroll-smooth">Dovednosti</a>
+          <a href="#" class="relative scroll-smooth">Kontakt</a>
+        </div>
+        <a
+          href="/cv.pdf"
+          class="flex items-center gap-2 px-2.5 py-3 border rounded-xl border-copy w-max"
+          download
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6 18 18 6M6 6l12 12"
-          />
-        </svg>
+          Stáhnout CV
+          <i class="fa-solid fa-file-lines"></i>
+        </a>
 
-        <!-- LOGO -->
-        <p class="flex items-center">
-          Lukáš
+        <!-- HAMBURGER MENU ICON -->
+        <div class="md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="px-2.5 mx-auto -mt-20 max-w-7xl">
+      <!-- HEADER SECTION -->
+      <section id="hero" class="flex items-center h-screen">
+        <div class="flex flex-col w-1/2 gap-8">
           <span
-            class="h-10 mx-6 border-l border-violet-900 md:h-16 lg:h-48"
-          ></span>
-          Dlábek
-        </p>
+            class="bg-secondary text-secondary-content w-max py-1 px-3.5 rounded-xl font-semibold"
+            >Lukáš Dlábek</span
+          >
+          <h2 class="text-5xl text-copy">
+            Front End <span class="text-secondary">Developer</span>
+          </h2>
+          <p class="text-copy-light">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus ab, omnis incidunt est dolorum alias similique
+            aspernatur vitae sint ipsa?
+          </p>
 
-        <!-- LINKS -->
-        <ul class="flex flex-col items-center w-full gap-20">
-          <li>
-            <a
-              href="https://www.linkedin.com/in/lukas-dlabek"
-              target="_blank"
-              class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse"
-              >Linkedin</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/CutieUnicornCZ"
-              target="_blank"
-              class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse"
-              >Github</a
-            >
-          </li>
-          <li>
+          <!-- CTA BUTTONS -->
+          <div class="flex items-center gap-5 text-sm">
             <a
               href="#"
-              target="_blank"
-              class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse"
-              >E-mail</a
+              class="py-2 font-semibold rounded-lg bg-secondary w-max px-7 text-secondary-content"
+              >Hire Me</a
             >
-          </li>
-        </ul>
-      </nav>
+            <a
+              href="/cv.pdf"
+              class="flex items-center gap-2 px-2.5 py-3 border rounded-xl border-copy w-max"
+              download
+            >
+              Stáhnout CV
+              <i class="fa-solid fa-file-lines"></i>
+            </a>
+          </div>
 
-      <!-- DESKTOP MENU -->
-      <header class="flex justify-between p-6">
-        <!-- LOGO -->
-        <div class="logo">
-          <p class="flex items-center animate-fadeindown">
-            Lukáš
-            <span class="h-8 mx-1 border border-almostWhite"></span>
-            Dlábek
-          </p>
-        </div>
-        <!-- LINKS -->
-        <div class="hidden menu md:block">
-          <ul class="flex items-center w-full gap-10 animate-fadeindown">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/lukas-dlabek"
-                target="_blank"
-                class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse group"
-                >Linkedin
-                <span
-                  class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sunYellow"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/CutieUnicornCZ"
-                target="_blank"
-                class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse group"
-                >Github
-                <span
-                  class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sunYellow"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                class="duration-200 ease-linear hover:tracking-widest hover:text-sunYellow hover:animate-pulse group"
-                >E-mail
-                <span
-                  class="block max-w-0 group-hover:max-w-full transition-all duration-200 h-0.5 bg-sunYellow"
-                ></span
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="cursor-pointer size-8 hover:animate-pulse hover:stroke-sunYellow md:hidden"
-          id="btnMenuOpen"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-      </header>
-
-      <!-- SECTION MAIN -->
-      <section
-        id="main-content"
-        class="flex flex-col justify-center w-full h-screen max-w-2xl px-10 mx-auto md:ml-28 animate-flyinright"
-      >
-        <div>
-          <img
-            class="w-1/6 duration-1000 border-2 rounded-full md:w-1/6 grayscale hover:grayscale-0 hover:border-sunYellow hover:shadow-lg hover:shadow-gray-700"
-            src="./src/images/profile_pic.jpg"
-            alt=""
-          />
-        </div>
-        <div class="mt-4">
-          <h1 class="py-1 text-3xl font-bold md:text-4xL">
-            Lukáš Dlábek
-            <span class="font-normal text-sunYellow">Frontend developer</span>
-          </h1>
-          <p class="mt-2 md:text-xl">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-            architecto expedita, repellat placeat culpa modi fuga voluptate illo
-            laboriosam blanditiis dolorem sapiente ad eius facilis iusto, vero
-            numquam nobis. Quidem.
-          </p>
+          <!-- SOCIAL ICONS -->
+          <div class="flex gap-6 mt-12">
+            <a
+              href=""
+              class="flex items-center justify-center w-10 h-10 text-3xl rounded-full hover:text-linkedin hover:text-2xl hover:shadow-shLinkedin hover:shadow-linkedin"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href=""
+              class="flex items-center justify-center w-10 h-10 text-3xl rounded-full hover:text-github hover:text-2xl hover:shadow-shGithub hover:shadow-github"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href=""
+              class="flex items-center justify-center w-10 h-10 text-3xl rounded-full hover:text-facebook hover:text-2xl hover:shadow-shFacebook hover:shadow-facebook"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href=""
+              class="flex items-center justify-center w-10 h-10 text-3xl rounded-full hover:text-bluesky hover:text-2xl hover:shadow-shBluesky hover:shadow-bluesky"
+            >
+              <i class="fa-brands fa-bluesky"></i>
+            </a>
+          </div>
         </div>
 
-        <div
-          class="flex flex-col items-center justify-center gap-6 my-10 text-xl md:flex-row md:gap-10"
-        >
-          <button
-            class="px-6 py-2 duration-200 border-2 rounded-full border-almostWhite bg-almostWhite text-darkColor hover:shadow-lg hover:shadow-gray-700 hover:bg-transparent hover:text-sunYellow hover:animate-jiggle hover:border-sunYellow"
+        <div class="flex items-center justify-end w-1/2 max-w-full">
+          <div
+            class="flex items-end justify-center overflow-hidden rounded-b-full h-cust1 w-cust1"
           >
-            Stáhnout CV
-          </button>
-          <button
-            class="p-2 px-6 duration-200 border-2 rounded-full border-almostWhite hover:shadow-lg hover:bg-sunYellow hover:text-darkColor hover:shadow-gray-700 hover:animate-jiggle hover:border-sunYellow"
-          >
-            Kontakt
-          </button>
+            <!-- TO DO: radial gradient -->
+            <div
+              class="rounded-full h-cust2 w-cust2 bg-radial-[at_25%_25%] from-primary-light to-primary-dark to-75%"
+            >
+              <img
+                src="/src/images/profile.png"
+                alt="Profilová fotka"
+                class="object-cover w-full h-full"
+              />
+            </div>
+          </div>
         </div>
+        <a
+          href=""
+          class="absolute flex flex-col items-center gap-5 text-2xl translate-x-1/2 bottom-12 right-1/2 text-secondary scroll-smooth"
+        >
+          <i class="fa-solid fa-arrow-down-long animate-bounce"></i>
+          <span class="text-sm text-copy-light">Scroll Down</span>
+        </a>
       </section>
-
-      <!-- SKILLS Section -->
-      <section id="skills" class="h-screen">
-        <div id="skills-text" class="pt-10">
-          <h2 class="text-3xl font-bold text-center md:text-4xL">Dovednosti</h2>
-          <p class="p-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            perspiciatis sint cupiditate, reiciendis ad ab fugiat totam a quasi
-            blanditiis.
-          </p>
-        </div>
-
-        <div
-          id="skills-wrapper"
-          class="flex flex-col items-center justify-center gap-10 px-10 md:flex-row"
-        >
-          <div
-            class="flex items-center justify-around w-56 px-5 rounded-lg"
-            id="html"
-          >
-            <svg
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-20"
-            >
-              <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26" />
-              <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529" />
-              <path
-                d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
-                fill="white"
-              />
-            </svg>
-            <span class="text-xl font-bold">HTML</span>
-          </div>
-
-          <div
-            id="css"
-            class="flex items-center justify-around w-56 px-5 rounded-lg"
-          >
-            <svg
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-20"
-            >
-              <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8" />
-              <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD" />
-              <path
-                d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
-                fill="white"
-              />
-            </svg>
-            <span class="text-xl font-bold">CSS</span>
-          </div>
-
-          <div
-            id="js"
-            class="flex items-center justify-around px-5 rounded-lg w-max"
-          >
-            <svg
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-20"
-            >
-              <rect x="2" y="2" width="28" height="28" fill="#FFCA28" />
-              <path
-                d="M19 25.2879L21.0615 23.9237C21.2231 24.4313 22.2462 25.6368 23.5385 25.6368C24.8308 25.6368 25.4308 24.931 25.4308 24.463C25.4308 23.1878 24.1112 22.7382 23.4774 22.5223C23.374 22.4871 23.289 22.4581 23.2308 22.4328C23.2009 22.4198 23.1558 22.4025 23.0979 22.3804C22.393 22.1111 19.7923 21.1175 19.7923 18.2373C19.7923 15.065 22.8538 14.7002 23.5462 14.7002C23.9991 14.7002 26.1769 14.7557 27.2615 16.7939L25.2615 18.1898C24.8231 17.3015 24.0946 17.0081 23.6462 17.0081C22.5385 17.0081 22.3077 17.8201 22.3077 18.1898C22.3077 19.227 23.5112 19.6919 24.5273 20.0844C24.7932 20.1871 25.0462 20.2848 25.2615 20.3866C26.3692 20.91 28 21.7666 28 24.463C28 25.8136 26.8672 28.0002 24.0154 28.0002C20.1846 28.0002 19.1692 25.7003 19 25.2879Z"
-                fill="#3E3E3E"
-              />
-              <path
-                d="M9 25.5587L11.1487 24.1953C11.317 24.7026 11.9713 25.638 12.9205 25.638C13.8698 25.638 14.3557 24.663 14.3557 24.1953V15.0002H16.9982V24.1953C17.041 25.4636 16.3376 28.0002 13.2332 28.0002C10.379 28.0002 9.19242 26.3039 9 25.5587Z"
-                fill="#3E3E3E"
-              />
-            </svg>
-            <span class="mx-2 text-xl font-bold">JAVASCRIPT</span>
-          </div>
-        </div>
-      </section>
-      <section id="contacts"></section>
     </main>
     <script src="script.js"></script>
   </body>
