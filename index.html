@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,25 +23,25 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body class="bg-primary-content text-copy">
+  <body class="bg-background text-copy">
     <!-- HEADER SECTION -->
     <header class="flex h-20 px-2.5 mx-auto max-w-7xl">
       <nav class="flex items-center justify-between w-full">
         <h1 class="text-2xl font-bold">Lukáš Dlábek.</h1>
         <div class="hidden gap-10 medium:flex">
           <a
-            href="#"
-            class="relative scroll-smooth after:w-2.5 after:h-1 after:bg-secondary after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:rounded-md"
+            href="/"
+            class="relative after:w-2.5 after:h-1 after:bg-primary after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:rounded-md"
             >Home</a
           >
-          <a href="#" class="relative scroll-smooth">O mně</a>
-          <a href="#" class="relative scroll-smooth">Zkušenosti</a>
-          <a href="#" class="relative scroll-smooth">Dovednosti</a>
-          <a href="#" class="relative scroll-smooth">Kontakt</a>
+          <a href="#about" class="relative">O mně</a>
+          <a href="#skills" class="relative">Zkušenosti</a>
+          <a href="#" class="relative">Dovednosti</a>
+          <a href="#" class="relative">Kontakt</a>
         </div>
         <a
-          href="/cv.pdf"
-          class="hidden medium:flex items-center gap-2 px-2.5 py-3 border rounded-xl border-copy w-max"
+          href="/src/resume/resume.pdf"
+          class="items-center hidden gap-2 py-2 border medium:flex px-7 rounded-xl border-copy w-max"
           download
         >
           Stáhnout CV
@@ -60,15 +60,15 @@
       <!-- HEADER SECTION -->
       <section
         id="hero"
-        class="flex flex-col-reverse items-center h-full small:h-lvh small:flex-row"
+        class="flex flex-col-reverse items-center h-full small:h-screen small:flex-row"
       >
-        <div class="flex flex-col w-full gap-8 small:w-1/2">
+        <div class="flex flex-col w-full gap-8 pt-16 small:pt-0 small:w-1/2">
           <span
-            class="bg-secondary text-secondary-content w-max py-1 px-3.5 rounded-xl font-semibold"
+            class="bg-primary text-primary-content w-max py-1 px-3.5 rounded-xl font-semibold"
             >Lukáš Dlábek</span
           >
           <h2 class="text-5xl text-copy">
-            Front End <span class="text-secondary">Developer</span>
+            Front End <span class="text-primary-light">Developer</span>
           </h2>
           <p class="text-copy-light">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -82,12 +82,12 @@
           >
             <a
               href="#"
-              class="py-2 font-semibold rounded-lg bg-secondary w-max px-7 text-secondary-content"
+              class="py-2 font-semibold rounded-lg bg-primary w-max px-7 text-primary-content"
               >Hire Me</a
             >
             <a
-              href="/cv.pdf"
-              class="flex items-center gap-2 px-2.5 py-3 border rounded-xl border-copy w-max"
+              href="/src/resume/resume.pdf"
+              class="flex items-center gap-2 py-2 border px-7 rounded-xl border-copy w-max"
               download
             >
               Stáhnout CV
@@ -126,27 +126,29 @@
           </div>
         </div>
 
+        <!-- RIGHT SIDE -->
         <div
           class="flex items-center justify-center w-full small:justify-end small:w-1/2 small:max-w-full"
         >
           <div
             class="flex items-end justify-center overflow-hidden rounded-b-full h-cust1 w-cust1"
           >
-            <!-- TO DO: radial gradient -->
             <div
-              class="rounded-full h-cust2 w-cust2 bg-radial-[at_25%_25%] from-primary-light to-primary-dark to-75%"
+              class="rounded-full h-cust2 w-cust2 bg-[radial-gradient(#f50246,#192b34)]"
             >
               <img
+                class="object-cover w-full h-full pt-6 small:pt-0 animate-scale"
                 src="/src/images/profile.png"
                 alt="Profilová fotka"
-                class="object-cover w-full h-full"
               />
             </div>
           </div>
         </div>
+
+        <!-- SCROLL PART -->
         <a
-          href=""
-          class="absolute flex flex-col-reverse items-center gap-5 text-2xl translate-x-1/2 small:flex-col small:bottom-12 small:right-1/2 text-secondary scroll-smooth bottom-14 right-5"
+          href="#about"
+          class="absolute flex flex-col-reverse items-center gap-5 text-2xl translate-x-1/2 small:flex-col small:bottom-12 small:right-1/2 text-primary scroll-smooth bottom-14 right-5"
         >
           <i class="fa-solid fa-arrow-down-long animate-bounce"></i>
           <span
@@ -154,6 +156,152 @@
             >Scroll Down</span
           >
         </a>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section
+        id="about"
+        class="flex flex-col medium:flex-row items-center h-full medium:h-screen gap-14 mt-28 medium:mt-0 py-8 medium:py-0"
+      >
+        <!-- ABOUT LEFT SIDE -->
+        <div class="w-cust3 max-h-full pointer-events-none">
+          <div
+            class="bg-primary w-full medium:h-cust3 rounded-2xl flex justify-between items-center overflow-hidden text-background"
+          >
+            <p
+              class="[writing-mode:vertical-lr] uppercase font-semibold tracking-[.9rem] rotate-180 text-4xl -ml-1"
+            >
+              Lukas Dlabek
+            </p>
+            <div class="flex flex-col items-center gap-2.5">
+              <p
+                class="tracking-[-50px] text-[450px] flex leading-[.9] font-bold font-sans"
+              >
+                10
+              </p>
+
+              <p class="text-3xl font-medium">Dokončených Projektů</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABOUT RIGHT SIDE -->
+        <div class="flex flex-col gap-12 justify-between">
+          <div class="flex flex-col gap-2.5">
+            <p class="text-3xl tracking-widest font-medium">
+              <span class="text-primary pr-2">–</span>O Mně
+            </p>
+            <p class="text-5xl font-semibold">
+              Kdo je <span class="text-primary">Lukáš Dlábek?</span>
+            </p>
+          </div>
+          <p class="text-copy-lighter leading-loose tracking-wider">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit non
+            cumque tempora laborum, facere praesentium?
+          </p>
+          <div class="flex gap-12">
+            <div class="flex flex-col gap-2.5">
+              <p class="text-3xl font-medium">100%</p>
+              <p class="text-xl tracking-widest">Profesionalita</p>
+            </div>
+
+            <div class="flex flex-col gap-2.5">
+              <p class="text-3xl font-medium">100%</p>
+              <p class="text-xl tracking-wider">Nadšení</p>
+            </div>
+          </div>
+          <div class="about-right-bottom">
+            <a
+              href="/src/resume/resume.pdf"
+              class="flex items-center bg-secondary-content text-secondary-content rounded-3xl gap-2.5 pl-1 max-w-fit group"
+            >
+              <span
+                class="bg-secondary h-9 w-9 flex items-center justify-center rounded-full group-hover:translate-x-2"
+                ><i class="fa-solid fa-arrow-right"></i
+              ></span>
+              <p class="py-3 px-6 bg-secondary rounded-3xl">Download CV</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="h-screen flex flex-col justify-center gap-20">
+        <div class="text-center flex flex-col gap-5">
+          <p class="text-3xl tracking-widest font-medium">
+            <span class="text-primary pr-2">–</span>Skills
+          </p>
+          <p class="font-semibold self-center text-4xl">
+            Mám zkušenosti s tvorbou responzivních webových stránek pomocí HTML,
+            CSS, JavaScript, Tailwind CSS a databází PostgreSQL.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-5 justify-center">
+          <div
+            class="flex basis-full medium:basis-1/4 bg-html items-center p-5 rounded-xl gap-4"
+          >
+            <div class="w-11 h-11">
+              <img
+                src="/src/images/html.png"
+                alt=""
+                class="w-full object-contain"
+              />
+            </div>
+            <p class="skill-title">HTML</p>
+          </div>
+
+          <div
+            class="flex basis-full medium:basis-1/4 bg-css items-center p-5 rounded-xl gap-4"
+          >
+            <div class="w-11 h-11">
+              <img
+                src="/src/images/css.png"
+                alt=""
+                class="w-full object-contain"
+              />
+            </div>
+            <p class="skill-title">CSS</p>
+          </div>
+
+          <div
+            class="flex basis-full medium:basis-1/4 bg-js items-center p-5 rounded-xl gap-4"
+          >
+            <div class="w-11 h-11">
+              <img
+                src="/src/images/js.png"
+                alt=""
+                class="w-full object-contain"
+              />
+            </div>
+            <p class="skill-title">JAVASCRIPT</p>
+          </div>
+
+          <div
+            class="flex basis-full medium:basis-1/4 bg-tailwind items-center p-5 rounded-xl gap-4"
+          >
+            <div class="w-11 h-11">
+              <img
+                src="/src/images/tailwind.png"
+                alt=""
+                class="w-full object-contain"
+              />
+            </div>
+            <p class="skill-title">TAILWIND CSS</p>
+          </div>
+
+          <div
+            class="flex basis-full medium:basis-1/4 bg-postgresql items-center p-5 rounded-xl gap-4"
+          >
+            <div class="w-11 h-11">
+              <img
+                src="/src/images/PostgresSQL.png"
+                alt=""
+                class="w-full object-contain"
+              />
+            </div>
+            <p class="skill-title">POSTGRESQL</p>
+          </div>
+        </div>
       </section>
     </main>
     <script src="script.js"></script>
