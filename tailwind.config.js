@@ -3,8 +3,9 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["Ubuntu", "sans-serif"],
+      screens: {
+        medium: "840px",
+        small: "720px",
       },
 
       colors: {

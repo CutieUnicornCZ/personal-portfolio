@@ -10,15 +10,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body class="font-sans bg-primary-content text-copy">
+  <body class="bg-primary-content text-copy">
     <!-- HEADER SECTION -->
     <header class="flex h-20 px-2.5 mx-auto max-w-7xl">
       <nav class="flex items-center justify-between w-full">
         <h1 class="text-2xl font-bold">Lukáš Dlábek.</h1>
-        <div class="flex gap-10">
+        <div class="hidden gap-10 medium:flex">
           <a
             href="#"
             class="relative scroll-smooth after:w-2.5 after:h-1 after:bg-secondary after:absolute after:-bottom-1 after:left-1/2 after:-translate-x-1/2 after:rounded-md"
@@ -31,7 +41,7 @@
         </div>
         <a
           href="/cv.pdf"
-          class="flex items-center gap-2 px-2.5 py-3 border rounded-xl border-copy w-max"
+          class="hidden medium:flex items-center gap-2 px-2.5 py-3 border rounded-xl border-copy w-max"
           download
         >
           Stáhnout CV
@@ -39,17 +49,20 @@
         </a>
 
         <!-- HAMBURGER MENU ICON -->
-        <div class="md:hidden">
+        <div class="flex medium:hidden">
           <i class="fa-solid fa-bars"></i>
         </div>
       </nav>
     </header>
 
     <!-- MAIN SECTION -->
-    <main class="px-2.5 mx-auto -mt-20 max-w-7xl">
+    <main class="px-5 medium:px-2.5 mx-auto small:-mt-20 max-w-7xl mt-0">
       <!-- HEADER SECTION -->
-      <section id="hero" class="flex items-center h-screen">
-        <div class="flex flex-col w-1/2 gap-8">
+      <section
+        id="hero"
+        class="flex flex-col-reverse items-center h-full small:h-lvh small:flex-row"
+      >
+        <div class="flex flex-col w-full gap-8 small:w-1/2">
           <span
             class="bg-secondary text-secondary-content w-max py-1 px-3.5 rounded-xl font-semibold"
             >Lukáš Dlábek</span
@@ -64,7 +77,9 @@
           </p>
 
           <!-- CTA BUTTONS -->
-          <div class="flex items-center gap-5 text-sm">
+          <div
+            class="flex items-center justify-center gap-5 text-sm small:justify-normal"
+          >
             <a
               href="#"
               class="py-2 font-semibold rounded-lg bg-secondary w-max px-7 text-secondary-content"
@@ -81,7 +96,9 @@
           </div>
 
           <!-- SOCIAL ICONS -->
-          <div class="flex gap-6 mt-12">
+          <div
+            class="flex justify-center gap-6 mt-8 small:mt-12 small:justify-normal"
+          >
             <a
               href=""
               class="flex items-center justify-center w-10 h-10 text-3xl rounded-full hover:text-linkedin hover:text-2xl hover:shadow-shLinkedin hover:shadow-linkedin"
@@ -109,7 +126,9 @@
           </div>
         </div>
 
-        <div class="flex items-center justify-end w-1/2 max-w-full">
+        <div
+          class="flex items-center justify-center w-full small:justify-end small:w-1/2 small:max-w-full"
+        >
           <div
             class="flex items-end justify-center overflow-hidden rounded-b-full h-cust1 w-cust1"
           >
@@ -127,10 +146,13 @@
         </div>
         <a
           href=""
-          class="absolute flex flex-col items-center gap-5 text-2xl translate-x-1/2 bottom-12 right-1/2 text-secondary scroll-smooth"
+          class="absolute flex flex-col-reverse items-center gap-5 text-2xl translate-x-1/2 small:flex-col small:bottom-12 small:right-1/2 text-secondary scroll-smooth bottom-14 right-5"
         >
           <i class="fa-solid fa-arrow-down-long animate-bounce"></i>
-          <span class="text-sm text-copy-light">Scroll Down</span>
+          <span
+            class="text-sm text-copy-light [writing-mode:vertical-lr] [text-orientation:upright] small:[text-orientation:mixed] small:[writing-mode:horizontal-tb] small:tracking-normal tracking-tighter"
+            >Scroll Down</span
+          >
         </a>
       </section>
     </main>
