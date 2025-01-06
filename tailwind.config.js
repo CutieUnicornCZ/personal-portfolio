@@ -66,14 +66,24 @@ module.exports = {
         cust3: "400px",
       },
 
+      backgroundImage: {
+        "gradient-striped": "linear-gradient(to bottom,#fafcfd,transparent)",
+      },
+
       animation: {
         scale: "scale 1.5s ease-in-out alternate infinite",
+        blink: "blink 1s ease-out alternate infinite",
       },
 
       keyframes: {
         scale: {
           "0%, 100%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.05)" },
+        },
+
+        blink: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.3)" },
         },
       },
     },

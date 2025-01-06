@@ -24,7 +24,7 @@
   </head>
 
   <body class="bg-background text-copy">
-    <!-- HEADER SECTION -->
+    <!-- NAVIGATION SECTION -->
     <header class="flex h-20 px-2.5 mx-auto max-w-7xl">
       <nav class="flex items-center justify-between w-full">
         <h1 class="text-2xl font-bold">Lukáš Dlábek.</h1>
@@ -35,8 +35,8 @@
             >Home</a
           >
           <a href="#about" class="relative">O mně</a>
-          <a href="#skills" class="relative">Zkušenosti</a>
-          <a href="#" class="relative">Dovednosti</a>
+          <a href="#skills" class="relative">Dovednosti</a>
+          <a href="#experience" class="relative">Zkušenosti</a>
           <a href="#" class="relative">Kontakt</a>
         </div>
         <a
@@ -49,8 +49,46 @@
         </a>
 
         <!-- HAMBURGER MENU ICON -->
-        <div class="flex medium:hidden">
-          <i class="fa-solid fa-bars"></i>
+        <div class="medium:hidden z-50">
+          <button
+            id="menu-btn"
+            type="button"
+            class="z-40 block hamburger medium:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+        <div
+          id="menu"
+          class="absolute top-0 right-0 flex-col justify-around items-end hidden w-full min-h-screen px-11 pt-28 text-4xl text-copy uppercase bg-foreground z-30"
+        >
+          <a href="#about" class="hover:text-primary">O mně</a>
+          <a href="#skills" class="hover:text-primary">Dovednosti</a>
+          <a href="#experience" class="hover:text-primary">Zkušenosti</a>
+          <a href="#" class="hover:text-primary">Kontakt</a>
+          <a href="/src/resume/resume.pdf" class="hover:text-primary"
+            >Stáhnout CV</a
+          >
+
+          <div
+            class="absolute left-2 top-1 flex flex-col items-center justify-center"
+          >
+            <div class="bg-copy w-[1px] h-28"></div>
+            <a href=""
+              ><i class="fa-brands fa-linkedin -rotate-90 text-xl"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-github -rotate-90 text-xl"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-facebook -rotate-90 text-xl"></i
+            ></a>
+            <div class="bg-copy w-[1px] h-28 mt-5"></div>
+          </div>
         </div>
       </nav>
     </header>
@@ -82,12 +120,12 @@
           >
             <a
               href="#"
-              class="py-2 font-semibold rounded-lg bg-primary w-max px-7 text-primary-content"
+              class="py-2 font-semibold rounded-lg bg-primary w-max px-7 text-primary-content hover:scale-105 hover:shadow-md transition"
               >Hire Me</a
             >
             <a
               href="/src/resume/resume.pdf"
-              class="flex items-center gap-2 py-2 border px-7 rounded-xl border-copy w-max"
+              class="flex items-center gap-2 py-2 border px-7 rounded-xl border-copy w-max hover:scale-105 hover:shadow-md transition"
               download
             >
               Stáhnout CV
@@ -226,7 +264,10 @@
       </section>
 
       <!-- SKILLS SECTION -->
-      <section id="skills" class="h-screen flex flex-col justify-center gap-20">
+      <section
+        id="skills"
+        class="h-screen flex flex-col justify-center gap-20 mt-32 medium:mt-0"
+      >
         <div class="text-center flex flex-col gap-5">
           <p class="text-3xl tracking-widest font-medium">
             <span class="text-primary pr-2">–</span>Skills
@@ -238,7 +279,7 @@
         </div>
         <div class="flex flex-wrap gap-5 justify-center">
           <div
-            class="flex basis-full medium:basis-1/4 bg-html items-center p-5 rounded-xl gap-4"
+            class="flex basis-full medium:basis-1/4 bg-html items-center p-5 rounded-xl gap-4 hover:scale-105 transition"
           >
             <div class="w-11 h-11">
               <img
@@ -251,7 +292,7 @@
           </div>
 
           <div
-            class="flex basis-full medium:basis-1/4 bg-css items-center p-5 rounded-xl gap-4"
+            class="flex basis-full medium:basis-1/4 bg-css items-center p-5 rounded-xl gap-4 hover:scale-105 transition"
           >
             <div class="w-11 h-11">
               <img
@@ -264,7 +305,7 @@
           </div>
 
           <div
-            class="flex basis-full medium:basis-1/4 bg-js items-center p-5 rounded-xl gap-4"
+            class="flex basis-full medium:basis-1/4 bg-js items-center p-5 rounded-xl gap-4 hover:scale-105 transition"
           >
             <div class="w-11 h-11">
               <img
@@ -277,7 +318,7 @@
           </div>
 
           <div
-            class="flex basis-full medium:basis-1/4 bg-tailwind items-center p-5 rounded-xl gap-4"
+            class="flex basis-full medium:basis-1/4 bg-tailwind items-center p-5 rounded-xl gap-4 hover:scale-105 transition"
           >
             <div class="w-11 h-11">
               <img
@@ -290,7 +331,7 @@
           </div>
 
           <div
-            class="flex basis-full medium:basis-1/4 bg-postgresql items-center p-5 rounded-xl gap-4"
+            class="flex basis-full medium:basis-1/4 bg-postgresql items-center p-5 rounded-xl gap-4 hover:scale-105 transition"
           >
             <div class="w-11 h-11">
               <img
@@ -303,6 +344,129 @@
           </div>
         </div>
       </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section
+        id="experience"
+        class="flex flex-col gap-12 pt-8 pb-28 medium:pt-2.5 h-full mt-24 medium:mt-0"
+      >
+        <div class="flex flex-col gap-5 items-center">
+          <p class="text-3xl tracking-widest font-medium">
+            <span class="text-primary pr-2">–</span>Zkušenosti
+          </p>
+          <p class="font-semibold text-center text-4xl max-w-full">
+            Předchozí pracovní zkušenosti
+          </p>
+        </div>
+
+        <!-- TIMELINE -->
+        <section id="timeline" class="relative w-full">
+          <!-- TIMELINE BOX 1-->
+          <div
+            id="timelineBox"
+            class="relative max-w-[92%] medium:w-[45%] min-h-40 bg-primary text-primary-content p-5 rounded-md ml-8 mb-5 medium:ml-0 medium:mb-0 medium:m-1 flex flex-col flex-wrap items-end left-[0%] top-9 break-words after:w-2.5 after:h-2.5 medium:after:w-4 medium:after:h-4 after:bg-secondary after:ring-1 after:ring-secondary-dark after:border-2 after:border-secondary-content after:shadow-md after:shadow-secondary-dark after:rounded-full after:absolute after:top-3 after:animate-blink medium:after:left-[109.5%] after:z-10 after:left-[-33px]"
+          >
+            <div
+              id="timelineBoxHead"
+              class="text-right mb-2.5 text-2xl font-medium"
+            >
+              <p>Front-End Developer</p>
+              <p>Freelance</p>
+              <em>Prosinec 2024 - </em>
+            </div>
+            <div id="timelineBoxDes" class="leading-normal">
+              <p>
+                Tvorba a vývoj moderních webových projektů pomocí HTML, CSS a
+                Javascript.
+              </p>
+            </div>
+          </div>
+
+          <!-- TIMELINE BOX 2-->
+          <div
+            id="timelineBox"
+            class="relative max-w-[92%] medium:w-[45%] min-h-40 bg-foreground p-5 rounded-md ml-8 mb-5 medium:ml-0 medium:mb-0 medium:m-1 flex flex-col flex-wrap items-end left-[0%] medium:left-[53%] top-9 medium:top-0 break-words border-2 border-border after:w-2.5 after:h-2.5 medium:after:w-4 medium:after:h-4 after:bg-secondary after:ring-1 after:ring-secondary-dark after:border-2 after:border-secondary-content after:shadow-md after:shadow-secondary-dark after:rounded-full after:absolute after:top-3 after:animate-blink medium:after:left-[-8.4%] after:z-10 after:left-[-35px]"
+          >
+            <div
+              id="timelineBoxHead"
+              class="text-right mb-2.5 text-2xl font-medium"
+            >
+              <p>Claims and Return specialist</p>
+              <p>CZC.CZ | Allegro Retail</p>
+              <em>říjen 2023 - říjen 2024</em>
+            </div>
+            <div id="timelineBoxDes" class="leading-normal text-copy-light">
+              <p>
+                Úzká spolupráce s dodavateli, servisy a smluvními partnery,
+                včetně zahraničních, na zajištění efektivního řešení reklamací,
+                Optimalizace a zefektivnění procesů. Řešení nestandardních
+                reklamací.
+              </p>
+            </div>
+          </div>
+
+          <!-- TIMELINE BOX 3-->
+          <div
+            id="timelineBox"
+            class="relative max-w-[92%] medium:w-[45%] min-h-40 bg-primary text-primary-content p-5 rounded-md ml-8 mb-5 medium:ml-0 medium:mb-0 medium:m-1 flex flex-col flex-wrap items-end left-[0%] top-9 break-words after:w-2.5 after:h-2.5 medium:after:w-4 medium:after:h-4 after:bg-secondary after:ring-1 after:ring-secondary-dark after:border-2 after:border-secondary-content after:shadow-md after:shadow-secondary-dark after:rounded-full after:absolute after:top-3 after:animate-blink medium:after:left-[109.5%] after:z-10 after:left-[-33px]"
+          >
+            <div
+              id="timelineBoxHead"
+              class="text-right mb-2.5 text-2xl font-medium"
+            >
+              <p>Reklamační technik - Back office</p>
+              <p>CZC.CZ</p>
+              <em>únor 2014 - září 2023</em>
+            </div>
+            <div id="timelineBoxDes" class="leading-normal">
+              <p>
+                Odpovědnost za komunikaci s dodavateli ohledně řešení reklamací
+                a následné zajištění, že vyřešené reklamace jsou vráceny
+                zákazníkům v souladu s dohodnutými podmínkami a termíny dodání.
+              </p>
+            </div>
+          </div>
+
+          <!-- TIMELINE BOX 4-->
+          <div
+            id="timelineBox"
+            class="relative max-w-[92%] medium:w-[45%] min-h-40 bg-foreground p-5 rounded-md ml-8 mb-5 medium:ml-0 medium:mb-0 medium:m-1 flex flex-col flex-wrap items-end left-[0%] medium:left-[53%] top-9 medium:top-0 break-words border-2 border-border after:w-2.5 after:h-2.5 medium:after:w-4 medium:after:h-4 after:bg-secondary after:ring-1 after:ring-secondary-dark after:border-2 after:border-secondary-content after:shadow-md after:shadow-secondary-dark after:rounded-full after:absolute after:top-3 after:animate-blink medium:after:left-[-8.4%] after:z-10 after:left-[-35px]"
+          >
+            <div
+              id="timelineBoxHead"
+              class="text-right mb-2.5 text-2xl font-medium"
+            >
+              <p>Reklamační technik - Back office</p>
+              <p>CZC.CZ</p>
+              <em>duben 2008 - leden 2014</em>
+            </div>
+
+            <div id="timelineBoxDes" class="leading-normal text-copy-light">
+              <p>
+                Přímá i nepřímá (telefonem i emailem) komunikace se zákazníky.
+                Příjem reklamovaného zboží a poskytnutí servisu, který
+                zajišťoval řešení problémů s vadnými produkty v souladu s
+                firemními standardy.
+              </p>
+            </div>
+          </div>
+
+          <div
+            id="timelineDivider"
+            class="absolute h-[80%] w-0.5 bg-gradient-to-b from-copy to-transparent from-50% to-50% bg-[length:10px_20px] bg-repeat-y bg-origin-border top-7 left-1 medium:left-1/2 -translate-x-1/2"
+          >
+            <div
+              id="timeTraveller"
+              class="sticky top-1/2 text-secondary rotate-90 text-3xl medium:text-4xl mt-4 ml-0 z-50"
+            >
+              <i class="fa-solid fa-plane"></i>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="h-screen"></section>
     </main>
     <script src="script.js"></script>
   </body>
