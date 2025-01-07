@@ -8,6 +8,16 @@
   }
 }
 
+@layer components {
+  .leftTimelineBox {
+    @apply relative max-w-[92%] medium:w-[45%] min-h-40 bg-primary text-primary-content p-5 rounded-md ml-8 mb-5 medium:ml-0 medium:mb-0 medium:m-1 flex flex-col flex-wrap items-end left-[0%] top-9 break-words after:w-2.5 after:h-2.5 medium:after:w-4 medium:after:h-4 after:bg-secondary after:ring-1 after:ring-secondary-dark after:border-2 after:border-secondary-content after:shadow-md after:shadow-secondary-dark after:rounded-full after:absolute after:top-3 after:animate-blink medium:after:left-[109.5%] after:z-10 after:left-[-33px];
+  }
+
+  .rightTimelineBox {
+    @apply relative max-w-[92%] medium:w-[45%] min-h-40 bg-foreground p-5 rounded-md ml-8 mb-5 medium:ml-0 medium:mb-0 medium:m-1 flex flex-col flex-wrap items-end left-[0%] medium:left-[53%] top-9 medium:top-0 break-words border-2 border-border after:w-2.5 after:h-2.5 medium:after:w-4 medium:after:h-4 after:bg-secondary after:ring-1 after:ring-secondary-dark after:border-2 after:border-secondary-content after:shadow-md after:shadow-secondary-dark after:rounded-full after:absolute after:top-3 after:animate-blink medium:after:left-[-8.4%] after:z-10 after:left-[-35px];
+  }
+}
+
 /* Hamburger Menu Button*/
 .hamburger {
   cursor: pointer;
