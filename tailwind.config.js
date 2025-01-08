@@ -63,7 +63,7 @@ module.exports = {
       width: {
         cust1: "380px",
         cust2: "360px",
-        cust3: "400px",
+        cust3: "440px",
       },
 
       backgroundImage: {
