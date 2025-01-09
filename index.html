@@ -39,7 +39,7 @@
         <div class="hidden gap-10 medium:flex">
           <a
             href="/"
-            class="relative after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-2.5 after:-translate-x-1/2 after:rounded-md after:bg-primary"
+            class="relative transition-all after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-2.5 after:-translate-x-1/2 after:rounded-md after:bg-primary hover:text-primary"
             >Home</a
           >
           <a href="#about" class="transition-all hover:text-primary">O mně</a>
@@ -260,10 +260,10 @@
         <!-- ABOUT RIGHT SIDE -->
         <div class="flex flex-col justify-between gap-12">
           <div class="flex flex-col gap-2.5">
-            <p class="text-3xl font-medium tracking-widest">
+            <p class="text-2xl font-medium tracking-widest medium:text-4xl">
               <span class="pr-2 text-primary">–</span>O Mně
             </p>
-            <p class="text-5xl font-semibold">
+            <p class="text-2xl font-semibold medium:text-4xl">
               Kdo je <span class="text-primary">Lukáš Dlábek?</span>
             </p>
           </div>
@@ -282,7 +282,7 @@
               <p class="text-xl tracking-wider">Nadšení</p>
             </div>
           </div>
-          <div class="about-right-bottom">
+          <div id="about-right-bottom">
             <a
               href="src/resume/resume.pdf"
               class="group flex max-w-fit items-center gap-2.5 rounded-3xl bg-secondary-content pl-1 text-secondary-content"
@@ -300,13 +300,13 @@
       <!-- SKILLS SECTION -->
       <section
         id="skills"
-        class="mt-32 flex h-screen flex-col justify-center gap-20 medium:mt-0"
+        class="mt-10 flex h-screen flex-col justify-center gap-20 medium:mt-0"
       >
         <div class="flex flex-col gap-5 text-center">
-          <p class="text-3xl font-medium tracking-widest">
+          <p class="text-2xl font-medium tracking-widest medium:text-3xl">
             <span class="pr-2 text-primary">–</span>Skills
           </p>
-          <p class="self-center text-4xl font-semibold">
+          <p class="self-center text-2xl font-semibold medium:text-4xl">
             Mám zkušenosti s tvorbou responzivních webových stránek pomocí HTML,
             CSS, JavaScript, Tailwind CSS a databází PostgreSQL.
           </p>
@@ -385,10 +385,12 @@
         class="mt-24 flex h-full flex-col gap-12 pb-28 pt-8 medium:mt-0 medium:pt-2.5"
       >
         <div class="flex flex-col items-center gap-5">
-          <p class="text-3xl font-medium tracking-widest">
+          <p class="text-2xl font-medium tracking-widest medium:text-3xl">
             <span class="pr-2 text-primary">–</span>Zkušenosti
           </p>
-          <p class="max-w-full text-center text-4xl font-semibold">
+          <p
+            class="max-w-full text-center text-xl font-semibold medium:text-4xl"
+          >
             Předchozí pracovní zkušenosti
           </p>
         </div>
@@ -399,7 +401,7 @@
           <div id="timelineBox" class="leftTimelineBox">
             <div
               id="timelineBoxHead"
-              class="mb-2.5 text-right text-2xl font-medium"
+              class="mb-2.5 text-right text-xl font-medium medium:text-2xl"
             >
               <p>Front-End Developer</p>
               <p>Freelance</p>
@@ -417,7 +419,7 @@
           <div id="timelineBox" class="rightTimelineBox">
             <div
               id="timelineBoxHead"
-              class="mb-2.5 text-right text-2xl font-medium"
+              class="mb-2.5 text-right text-xl font-medium medium:text-2xl"
             >
               <p>Claims and Return specialist</p>
               <p>CZC.CZ | Allegro Retail</p>
@@ -437,7 +439,7 @@
           <div id="timelineBox" class="leftTimelineBox">
             <div
               id="timelineBoxHead"
-              class="mb-2.5 text-right text-2xl font-medium"
+              class="mb-2.5 text-right text-xl font-medium medium:text-2xl"
             >
               <p>Reklamační technik - Back office</p>
               <p>CZC.CZ</p>
@@ -456,7 +458,7 @@
           <div id="timelineBox" class="rightTimelineBox">
             <div
               id="timelineBoxHead"
-              class="mb-2.5 text-right text-2xl font-medium"
+              class="mb-2.5 text-right text-xl font-medium medium:text-2xl"
             >
               <p>Reklamační technik - Back office</p>
               <p>CZC.CZ</p>
@@ -503,7 +505,7 @@
 
         <div
           id="projects-bottom"
-          class="mx-7 grid grid-cols-1 gap-4 small:grid-cols-2 medium:grid-cols-3"
+          class="mx-2 grid grid-cols-1 gap-4 small:grid-cols-2 medium:mx-7 medium:grid-cols-3"
         >
           <!-- PROJECT 1 -->
           <div
@@ -759,10 +761,10 @@
             </p>
             <div
               id="contactus-left-bottom"
-              class="mt-6 flex w-3/4 flex-col justify-between gap-2.5"
+              class="mt-6 flex w-3/4 flex-col justify-between gap-1 medium:gap-2.5"
             >
               <div
-                class="group flex items-center gap-16 rounded-full bg-foreground"
+                class="group flex items-center gap-1 rounded-full bg-foreground text-sm medium:gap-10 medium:text-base"
               >
                 <span
                   class="flex size-10 items-center justify-center rounded-full bg-primary text-primary-content transition-all duration-150 group-hover:bg-primary-dark"
@@ -778,7 +780,7 @@
                 >
               </div>
               <div
-                class="group flex items-center gap-16 rounded-full bg-foreground"
+                class="group flex items-center gap-1 rounded-full bg-foreground text-sm medium:gap-10 medium:text-base"
               >
                 <span
                   class="flex size-10 items-center justify-center rounded-full bg-primary text-primary-content transition-all duration-150 group-hover:bg-primary-dark"
@@ -794,7 +796,7 @@
                 >
               </div>
               <div
-                class="group flex items-center gap-16 rounded-full bg-foreground"
+                class="group flex items-center gap-1 rounded-full bg-foreground text-sm medium:gap-10 medium:text-base"
               >
                 <span
                   class="flex size-10 items-center justify-center rounded-full bg-primary text-primary-content transition-all duration-150 group-hover:bg-primary-dark"
@@ -857,6 +859,85 @@
         </div>
       </section>
     </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="mt-24 bg-foreground px-5 pb-5 pt-12">
+      <div id="footer-wrapper" class="mx-auto flex max-w-7xl flex-col">
+        <div
+          id="footer-links"
+          class="mb-5 flex flex-col items-center gap-8 pb-12"
+        >
+          <p id="footer-title" class="text-2xl font-semibold">
+            Lukáš Dlábek Portfolio
+          </p>
+          <div id="footer-nav" class="flex flex-wrap justify-center gap-8">
+            <a
+              href="/"
+              class="text-sm font-medium uppercase text-copy-lighter transition-all hover:-translate-y-0.5 hover:text-primary"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-sm font-medium uppercase text-copy-lighter transition-all hover:-translate-y-0.5 hover:text-primary"
+              >O mně</a
+            >
+            <a
+              href="#skills"
+              class="text-sm font-medium uppercase text-copy-lighter transition-all hover:-translate-y-0.5 hover:text-primary"
+              >Znalosti</a
+            >
+            <a
+              href="#experience"
+              class="text-sm font-medium uppercase text-copy-lighter transition-all hover:-translate-y-0.5 hover:text-primary"
+              >Zkušenosti</a
+            >
+            <a
+              href="#projects"
+              class="text-sm font-medium uppercase text-copy-lighter transition-all hover:-translate-y-0.5 hover:text-primary"
+              >Projekty</a
+            >
+            <a
+              href="#contactus"
+              class="text-sm font-medium uppercase text-copy-lighter transition-all hover:-translate-y-0.5 hover:text-primary"
+              >Kontakt</a
+            >
+          </div>
+          <div id="footer-socials-icon" class="flex gap-5">
+            <a
+              href="https://www.linkedin.com/in/lukas-dlabek/"
+              class="flex size-9 items-center justify-center rounded-full border border-primary text-primary transition-all hover:-translate-y-1 hover:scale-110 hover:border-transparent hover:bg-primary hover:text-primary-content"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/CutieUnicornCZ"
+              class="flex size-9 items-center justify-center rounded-full border border-primary text-primary transition-all hover:-translate-y-1 hover:scale-110 hover:border-transparent hover:bg-primary hover:text-primary-content"
+              target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://bsky.app/profile/lukasdlabek.bsky.social"
+              class="flex size-9 items-center justify-center rounded-full border border-primary text-primary transition-all hover:-translate-y-1 hover:scale-110 hover:border-transparent hover:bg-primary hover:text-primary-content"
+              target="_blank"
+              ><i class="fa-brands fa-bluesky"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100090377780982"
+              class="flex size-9 items-center justify-center rounded-full border border-primary text-primary transition-all hover:-translate-y-1 hover:scale-110 hover:border-transparent hover:bg-primary hover:text-primary-content"
+              target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          id="copyright"
+          class="text-center text-xs font-light text-copy-lighter"
+        >
+          Copyright ©2025 Všechna práva vyhrazena | Coded by
+          <span class="font-normal text-primary">Lukáš Dlábek</span>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
